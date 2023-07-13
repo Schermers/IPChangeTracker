@@ -20,6 +20,7 @@ Optionally you can define a DNS address to determine a mismatch. You will receiv
 This function app will run the script every hour.
 Look at the [docker-comopose.yml](docker-compose.yml) for the docker setup that contains:
 1. Azure Functions container
+1. Azureite (storage account emulator)
 ## Next steps
 1. Download the [Function Apps](Function%20Apps) folder to '/home/{USER}/Function Apps'
 1. Download the [.env.azfunc](.env.azfunc) file next to your **docker-compose.yml** file
