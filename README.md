@@ -8,7 +8,7 @@ Notifications will be send via [pushover.net](https://pushover.net/) (a (free) a
 Optionally you can define a DNS address to determine a mismatch. You will receive a notification if your IP address has been changed versus your DNS address.
 
 ## Screenshot
-![Screenshot](images/pushover_notification.png)
+<img src="images/pushover_notification.png" width=400>
 
 # Prerequisites
 1. [pushover.net](https://pushover.net/) account
