@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-  # Azure functions to run the PowerShell function PWS2mqtt     
+  # Azure functions to run the PowerShell function     
   azure-functions:
     image: mcr.microsoft.com/azure-functions/powershell:4.0
     container_name: azure-functions 
