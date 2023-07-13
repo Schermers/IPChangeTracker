@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  # Azure functions to run the PowerShell function PWS2mqtt     
+  azure-functions:
+    image: mcr.microsoft.com/azure-functions/powershell:4.0
+    container_name: azure-functions 
+    restart: unless-stopped
+    # ports:
+    #   - "80:80"
+    env_file:
+      - '.env.azfunc'
+    volumes:
+      - /home/${USER}/Function Apps:/home/site/wwwroot
+
+  # Azureite is required to emulate a storage account
+  # Allowing remote requests may make your system vulnerable to external attacks.
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    container_name: azurite
+    restart: unless-stopped
+    ports:
+      - "10000:10000"
+      - "10001:10001"
+      - "10002:10002"
